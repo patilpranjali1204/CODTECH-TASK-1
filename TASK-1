@@ -1,0 +1,22 @@
+/* */
+math=float(input("enter marks for maths:"))
+physics=float(input("enter marks for physics:"))
+chemistry=float(input("enter marks for chemistry:"))
+hindi=float(input("enter marks for hindi:"))
+marathi=float(input("enter marks for marathi:"))
+
+total=math+physics+chemistry+hindi+marathi
+percentage=total/5
+if percentage>=85:
+    grade='a'
+elif percentage>=75:
+    grade='b'
+elif percentage>=50:
+    grade='c'
+elif percentage>=30:
+    grade='d'
+else:
+    grade="reappear"
+print("total marks:",total)
+print("percentage:",percentage)
+print("grade:",grade)
